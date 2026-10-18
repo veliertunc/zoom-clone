@@ -1,4 +1,4 @@
-# Next.js template
+# Zoom Clone
 
 This is a Next.js template with shadcn/ui.
 
