@@ -1,3 +1,4 @@
+"use client"
 import { sidebarLinks } from "@/constants"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
@@ -19,9 +20,11 @@ const Sidebar = () => {
               key={link.label}
               className={cn(
                 "flex items-center justify-start gap-4 rounded-lg p-4",
-                { "bg-blue-700": isActive }
+                { "bg-blue-600": isActive }
               )}
-            ></Link>
+            >
+              {link.label}
+            </Link>
           )
         })}
       </div>
