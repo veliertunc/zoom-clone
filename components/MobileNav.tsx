@@ -46,7 +46,8 @@ const MobileNav = () => {
                 <div className="flex flex-col gap-6">
                   {sidebarLinks.map((link) => {
                     const isActive =
-                      pathName === link.route || pathName.startsWith(link.route)
+                      pathName === link.route ||
+                      pathName.startsWith(`${link.route}/`)
 
                     return (
                       <SheetClose key={link.route}>
